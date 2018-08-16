@@ -37,9 +37,11 @@ document.getElementById('idName');
 - if targeting class or id, must use prefix (i.e. #id or .class)
 ```javascript
 document.querySelectorAll('.className'); 
-
+```
+```javascript
 document.querySelector('#idName');
-
+```
+```javascript
 document.querySelectorAll('h2');
 ```
 
