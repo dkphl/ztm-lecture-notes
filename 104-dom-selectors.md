@@ -7,7 +7,7 @@ returns an array of all elements matching the tag (h1, p, li, etc.)
 ```javascript
 document.getElementsByTagName('tagName');
 ```
-can also specify and index, to target a specific one:
+can also specify an index, to target a specific one:
 
 ```javascript
 document.getElementsByTagName('tagName')[#];
