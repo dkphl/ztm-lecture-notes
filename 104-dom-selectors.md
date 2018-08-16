@@ -1,11 +1,14 @@
 # Lesson 103 - DOM Selectors
 <br>
 ## getElementsByTagName
+
 returns an array of all elements matching the tag (h1, p, li, etc.)
+
 ```javascript
 document.getElementsByTagName('tagName');
 ```
 can also specify and index, to target a specific one:
+
 ```javascript
 document.getElementsByTagName('tagName')[#];
 ```
@@ -46,6 +49,7 @@ document.querySelector('h1').getAttribute('class');
 ##setAttribute
 - changes the given attribute for the chosen selector (id, class, other)
 - takes two arguments - the attribute, and the attribute's new value
+
 ```javascript
 document.querySelector('h1').setAttribute('id', 'idName');
 ```
