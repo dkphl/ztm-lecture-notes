@@ -30,13 +30,16 @@ returns a single element matching the id
 ```javascript
 document.getElementById('idName');
 ```
+
 ## querySelector & querySelectorAll
 - more powerful the getElementsBy
 - can target many types of elements (class, id, h1, ul, li, etc.)
 - if targeting class or id, must use prefix (i.e. #id or .class)
 ```javascript
 document.querySelectorAll('.className'); 
+
 document.querySelector('#idName');
+
 document.querySelectorAll('h2');
 ```
 
