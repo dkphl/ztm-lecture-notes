@@ -55,20 +55,28 @@ document.querySelector('h1').setAttribute('id', 'idName');
 ```
 
 # Changing Styles
+```javascript
 style.{property} //ok
 
 className //best
+
 classList //best
 
 classList.add
+
 classList.remove
+
 classList.toggle
-
+```
 # Bonus
+```javascript
 innerHTML //DANGEROUS
+```
 
+```javascript
 parentElement
 children
+```
 
 # It is important to CACHE selectors in variables
 store selectors as variables - cleaner code, optimized web page
