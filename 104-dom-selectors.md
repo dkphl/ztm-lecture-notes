@@ -46,7 +46,7 @@ returns the requested attribute of the first element that matches the query sele
 document.querySelector('h1').getAttribute('class');
 ```
 
-##setAttribute
+## setAttribute
 - changes the given attribute for the chosen selector (id, class, other)
 - takes two arguments - the attribute, and the attribute's new value
 
