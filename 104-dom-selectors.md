@@ -2,6 +2,7 @@
 <br>
 ## getElementsByTagName
 returns an array of all elements matching the tag (h1, p, li, etc.)
+
 ```javascript
 document.getElementsByTagName('tagName');
 ```
