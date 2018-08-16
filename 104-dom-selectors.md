@@ -86,3 +86,8 @@ store selectors as variables - cleaner code, optimized web page
 ```javascript
 let h1Class = document.querySelector('h1').getAttribute('class');
 ```
+```javascript
+function selectElement (selector) {
+  return document.querySelector(selector);
+}
+```
