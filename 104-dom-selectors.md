@@ -2,12 +2,12 @@
 
 ## getElementsByTagName
 
-returns an array of all elements matching the tag (h1, p, li, etc.)
+- returns an array of all elements matching the tag (h1, p, li, etc.)
 
 ```javascript
 document.getElementsByTagName('tagName');
 ```
-can also specify an index, to target a specific one:
+- can also specify an index, to target a specific one:
 
 ```javascript
 document.getElementsByTagName('tagName')[#];
@@ -15,18 +15,18 @@ document.getElementsByTagName('tagName')[#];
 
 
 ## getElementsByClassName
-returns an array of all elements matching the class name
+- returns an array of all elements matching the class name
 ```javascript
 document.getElementsByClassName('className');
 ```
 
-can also be targeted via an index number:
+- can also be targeted via an index number:
 ```javascript
 document.getElementsByClassName('className')[#];
 ```
 
 ## getElementById
-returns a single element matching the id
+- returns a single element matching the id
 ```javascript
 document.getElementById('idName');
 ```
@@ -46,7 +46,7 @@ document.querySelectorAll('h2');
 ```
 
 ## getAttribute
-returns the requested attribute of the first element that matches the query selector (example below, the class name of the first h1 element)
+- returns the requested attribute of the first element that matches the query selector (example below, the class name of the first h1 element)
 ```javascript
 document.querySelector('h1').getAttribute('class');
 ```
@@ -69,9 +69,10 @@ style.{property} //ok, but violates separation of concerns
 document.querySelector('h1').className = 'title';
 ```
 ## classList
-- returns a DOMTokenlist (array) of class attributes of the selected element
+- returns a DOMTokenList (array) of class attributes of the selected element
 - available methods:
     - add, remove, toggle, replace, item, contains
+    - **not supported on all browsers,** double-check prior to using
 ```javascript
 let h1 = document.querySelector('h1')
 
@@ -91,13 +92,23 @@ h1.classList.contains('class'); // checks for existence of given class, returns 
 
 ```
 # Bonus
+## innerHTML
+- used to read or change HTML content of an element
 ```javascript
-innerHTML //DANGEROUS
+h1.innerHTML; // returns the content inside of the h1 tag
+
+h1.innerHTML = 'htmlMarkup'; // DANGEROUS
+```
+- innerHTML can be a security risk, so when inserting plain text, it's recommended to use .textContent. This doesn't parse the passed content as HTML, but instead **inserts it as raw text:**
+```javascript
+h1.textContent = 'Hello World!';
 ```
 
+## parentElement & children
 ```javascript
-parentElement
-children
+document.querySelector('li').parentElement; // returns the ul parent
+
+document.querySelector('ul').children; // returns an array of child elements
 ```
 
 # It is important to CACHE selectors in variables
