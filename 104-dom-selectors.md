@@ -61,17 +61,34 @@ document.querySelector('h1').setAttribute('id', 'idName');
 
 # Changing Styles
 ```javascript
-style.{property} //ok
+style.{property} //ok, but violates separation of concerns
+```
+## className
+- add a class value to selected element
+```javascript
+document.querySelector('h1').className = 'title';
+```
+## classList
+- returns a DOMTokenlist (array) of class attributes of the selected element
+- available methods:
+    - add, remove, toggle, replace, item, contains
+```javascript
+let h1 = document.querySelector('h1')
 
-className //best
+h1.classList;
 
-classList //best
+h1.classList.add('class');
 
-classList.add
+h1.classList.remove('class');
 
-classList.remove
+h1.classList.toggle('class'); // adds/removes, depending on if the class is present or not
 
-classList.toggle
+h1.classList.replace('oldClass', 'newClass');
+
+h1.classList.item(number); // to target a specific class in the list
+
+h1.classList.contains('class'); // checks for existence of given class, returns boolean 
+
 ```
 # Bonus
 ```javascript
