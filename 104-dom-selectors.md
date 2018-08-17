@@ -112,7 +112,7 @@ document.querySelector('ul').children; // returns an array of child elements
 ```
 
 # It is important to CACHE selectors in variables
-store selectors as variables - cleaner code, optimized web page
+store selectors as variables - cleaner code, optimized performance
 ```javascript
 let h1Class = document.querySelector('h1').getAttribute('class');
 ```
