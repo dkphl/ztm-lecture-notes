@@ -7,7 +7,7 @@
 ```javascript
 document.getElementsByTagName('tagName');
 ```
-- can also specify an index, to target a specific one:
+- can also specify an index to target a specific item:
 
 ```javascript
 document.getElementsByTagName('tagName')[#];
@@ -32,7 +32,7 @@ document.getElementById('idName');
 ```
 
 ## querySelector & querySelectorAll
-- more powerful the getElementsBy
+- more useful/powerful than getElementsBy...
 - can target many types of elements (class, id, h1, ul, li, etc.)
 - if targeting class or id, must use prefix (i.e. #id or .class)
 ```javascript
@@ -46,7 +46,7 @@ document.querySelectorAll('h2');
 ```
 
 ## getAttribute
-- returns the requested attribute of the first element that matches the query selector (example below, the class name of the first h1 element)
+- returns the requested attribute of the first element that matches the query selector (in example below: the class name of the first h1 element)
 ```javascript
 document.querySelector('h1').getAttribute('class');
 ```
@@ -106,9 +106,9 @@ h1.textContent = 'Hello World!';
 
 ## parentElement & children
 ```javascript
-document.querySelector('li').parentElement; // returns the ul parent
+document.querySelector('li').parentElement; // returns the direct parent
 
-document.querySelector('ul').children; // returns an array of child elements
+document.querySelector('ul').children; // returns an array of all child elements
 ```
 
 # It is important to CACHE selectors in variables
