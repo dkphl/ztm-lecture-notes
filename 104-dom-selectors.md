@@ -1,4 +1,4 @@
-# Lesson 103 - DOM Selectors
+# Lesson 104 - DOM Selectors
 
 ## getElementsByTagName
 
