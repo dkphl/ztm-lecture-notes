@@ -45,6 +45,7 @@ function addTodoAfterKeypress (event) {
     addTodoItem();
   }
 }
+// keycode 13 corresponds to the enter key, so hitting the enter key records the new todo item
 
 todoNameInput.addEventListener('keypress', addTodoAfterKeypress);
 ```
@@ -59,7 +60,7 @@ todoNameInput.addEventListener('keypress', addTodoAfterKeypress);
     - make sure to use descriptive variable names
 
 ```javascript
-// THIS IS MUCH CLEANER THAN WHERE THE CODE STARTED, WITH THE SAME FUNCTIONs BEING WRITTEN REPEATEDLY
+// THIS IS MUCH CLEANER THAN WHERE THE CODE STARTED, WITH THE SAME FUNCTIONS BEING WRITTEN REPEATEDLY
 
 let todoNameInput = document.getElementById('todoNameInput');
 let addTodoButton = document.getElementById('addTodoButton');
