@@ -1,4 +1,7 @@
 # Lesson 105 - DOM Events
+### links for this lesson
+- [MDN Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [Javascript Char Code Reference](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
 
 ## addEventListener
 - takes two arguments:
@@ -93,3 +96,20 @@ addTodoButton.addEventListener('click', addTodoAfterClick);
 todoNameInput.addEventListener('keypress', addTodoAfterKeypress);
 
 ```
+
+### a note on callback functions:
+- by default, you can't pass an argument to a callback function, hence why we must have this:
+```javascript
+addTodoButton.addEventListener('click', addTodoAfterClick);
+
+todoNameInput.addEventListener('keypress', addTodoAfterKeypress);
+
+```
+- rather than this:
+```javascript
+addTodoButton.addEventListener('click', addTodoAfterClick());
+
+todoNameInput.addEventListener('keypress', addTodoAfterKeypress(event));
+
+```
+
